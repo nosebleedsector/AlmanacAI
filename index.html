@@ -40,17 +40,12 @@
 
     <style>
         :root {
-            --bg: #ffffff;
-            --bg-off: #F9F9F7;
             --green: #5E6312;
             --green-dark: #4a4e0e;
-            --green-light: #FCFFF1;
-            --text: #1a1a1a;
-            --text-secondary: #4a4a46;
-            --text-muted: #8a8a82;
-            --border: #e8e8e4;
-            --shadow: 0 1px 3px rgba(0,0,0,0.04), 0 1px 2px rgba(0,0,0,0.03);
-            --shadow-hover: 0 4px 12px rgba(0,0,0,0.06);
+            --text: #111;
+            --text-secondary: #444;
+            --text-muted: #888;
+            --border: #e0e0e0;
             --sidebar-width: 240px;
         }
 
@@ -64,7 +59,7 @@
 
         body {
             font-family: 'Rethink Sans', sans-serif;
-            background: var(--bg-off);
+            background: #fff;
             color: var(--text);
             line-height: 1.75;
             min-height: 100vh;
@@ -75,9 +70,9 @@
             position: fixed;
             left: 0; top: 0; bottom: 0;
             width: var(--sidebar-width);
-            background: var(--bg);
+            background: #fff;
             border-right: 1px solid var(--border);
-            padding: 2rem 0;
+            padding: 2.5rem 0;
             z-index: 200;
             overflow-y: auto;
             display: flex;
@@ -85,24 +80,25 @@
         }
 
         .sidebar-brand {
-            padding: 0 1.5rem 1.8rem;
+            padding: 0 1.5rem 2rem;
         }
 
         .sidebar-brand h1 {
             font-family: 'Hedvig Letters Serif', Georgia, serif;
             font-weight: 400;
-            font-size: 1.2rem;
+            font-size: 1.15rem;
             color: var(--text);
+            letter-spacing: -0.01em;
         }
 
         .sidebar-brand span {
-            font-size: 0.68rem;
+            font-size: 0.65rem;
             color: var(--text-muted);
-            font-weight: 500;
-            letter-spacing: 0.06em;
+            font-weight: 600;
+            letter-spacing: 0.1em;
             text-transform: uppercase;
             display: block;
-            margin-top: 2px;
+            margin-top: 4px;
         }
 
         .sidebar-nav {
@@ -110,10 +106,8 @@
             padding: 0;
             flex: 1;
             border-top: 1px solid var(--border);
-            padding-top: 0.75rem;
+            padding-top: 1rem;
         }
-
-        .sidebar-nav li { }
 
         .sidebar-nav a {
             font-size: 0.85rem;
@@ -121,14 +115,13 @@
             color: var(--text-muted);
             text-decoration: none;
             display: block;
-            padding: 0.6rem 1.5rem;
-            border-left: 3px solid transparent;
+            padding: 0.55rem 1.5rem;
+            border-left: 2px solid transparent;
             transition: all 0.15s;
         }
 
         .sidebar-nav a:hover {
             color: var(--text);
-            border-left-color: var(--border);
         }
 
         .sidebar-nav a.active {
@@ -138,7 +131,7 @@
         }
 
         .sidebar-footer {
-            padding: 1rem 1.5rem;
+            padding: 1.2rem 1.5rem;
             border-top: 1px solid var(--border);
             margin-top: auto;
         }
@@ -172,17 +165,17 @@
         .search-input {
             width: 100%;
             max-width: 360px;
-            padding: 0.45rem 0.8rem;
+            padding: 0.45rem 0.9rem;
             font-family: 'Rethink Sans', sans-serif;
             font-size: 0.82rem;
-            background: var(--bg-off);
+            background: #fafafa;
             border: 1px solid var(--border);
             color: var(--text);
             outline: none;
         }
 
         .search-input:focus { border-color: var(--green); }
-        .search-input::placeholder { color: var(--text-muted); }
+        .search-input::placeholder { color: #bbb; }
 
         /* ---- MAIN ---- */
         .main {
@@ -198,7 +191,7 @@
 
         /* ---- HERO ---- */
         .hero {
-            padding: 4rem 0 3.5rem;
+            padding: 5rem 0 4rem;
         }
 
         .hero h2 {
@@ -206,8 +199,9 @@
             font-weight: 400;
             font-size: 2.8rem;
             color: var(--text);
-            line-height: 1.2;
-            margin-bottom: 1.2rem;
+            line-height: 1.15;
+            margin-bottom: 1.5rem;
+            letter-spacing: -0.02em;
         }
 
         .hero h2 em {
@@ -219,16 +213,17 @@
             font-size: 1.05rem;
             color: var(--text-secondary);
             line-height: 1.85;
-            max-width: 560px;
+            max-width: 540px;
         }
 
         /* ---- SECTIONS ---- */
         section {
             padding: 3.5rem 0;
+            border-top: 1px solid var(--border);
         }
 
         .section-header {
-            margin-bottom: 2rem;
+            margin-bottom: 2.5rem;
         }
 
         .section-header h2 {
@@ -236,7 +231,8 @@
             font-weight: 400;
             font-size: 1.8rem;
             color: var(--text);
-            margin-bottom: 0.2rem;
+            margin-bottom: 0.3rem;
+            letter-spacing: -0.01em;
         }
 
         .section-header p {
@@ -248,28 +244,27 @@
         .evidence-grid {
             display: grid;
             grid-template-columns: 1fr 1fr;
-            gap: 1rem;
+            gap: 1.5rem;
         }
 
         .evidence-card {
-            background: var(--bg);
-            padding: 1.6rem;
-            box-shadow: var(--shadow);
-            transition: box-shadow 0.2s;
+            padding: 1.8rem;
+            border: 1px solid var(--border);
+            transition: border-color 0.2s;
         }
 
         .evidence-card:hover {
-            box-shadow: var(--shadow-hover);
+            border-color: var(--green);
         }
 
         .evidence-tag {
             font-family: 'Rethink Sans', sans-serif;
-            font-size: 0.65rem;
+            font-size: 0.62rem;
             font-weight: 600;
-            letter-spacing: 0.08em;
+            letter-spacing: 0.1em;
             text-transform: uppercase;
             color: var(--green);
-            margin-bottom: 0.6rem;
+            margin-bottom: 0.8rem;
             display: block;
         }
 
@@ -277,7 +272,7 @@
             font-family: 'Hedvig Letters Serif', Georgia, serif;
             font-weight: 600;
             font-size: 1.05rem;
-            margin-bottom: 0.5rem;
+            margin-bottom: 0.6rem;
             color: var(--text);
             line-height: 1.35;
         }
@@ -285,18 +280,17 @@
         .evidence-card p {
             font-size: 0.88rem;
             color: var(--text-secondary);
-            line-height: 1.7;
+            line-height: 1.75;
         }
 
         .evidence-card .source-link {
             display: inline-block;
-            margin-top: 0.7rem;
+            margin-top: 0.8rem;
             font-family: 'Rethink Sans', sans-serif;
             font-size: 0.72rem;
-            font-weight: 500;
+            font-weight: 600;
             color: var(--green);
             text-decoration: none;
-            transition: color 0.15s;
         }
 
         .evidence-card .source-link:hover {
@@ -305,37 +299,31 @@
 
         .filter-tabs {
             display: flex;
-            gap: 0;
+            gap: 0.5rem;
             margin-bottom: 2rem;
-            border: 1px solid var(--border);
-            width: fit-content;
         }
 
         .filter-tab {
             font-family: 'Rethink Sans', sans-serif;
             font-size: 0.75rem;
             font-weight: 500;
-            padding: 0.45rem 1.1rem;
-            border: none;
-            border-right: 1px solid var(--border);
-            background: var(--bg);
+            padding: 0.4rem 1rem;
+            border: 1px solid var(--border);
+            background: #fff;
             color: var(--text-muted);
             cursor: pointer;
             transition: all 0.15s;
         }
 
-        .filter-tab:last-child {
-            border-right: none;
-        }
-
         .filter-tab:hover {
-            background: var(--bg-off);
+            border-color: var(--text-muted);
             color: var(--text);
         }
 
         .filter-tab.active {
             background: var(--green);
-            color: white;
+            border-color: var(--green);
+            color: #fff;
         }
 
         /* ---- TIMELINE ---- */
@@ -351,13 +339,12 @@
             top: 6px;
             bottom: 6px;
             width: 1px;
-            background: var(--green);
-            opacity: 0.3;
+            background: var(--border);
         }
 
         .timeline-entry {
             position: relative;
-            margin-bottom: 2.2rem;
+            margin-bottom: 2.5rem;
             padding-left: 1.5rem;
         }
 
@@ -375,9 +362,9 @@
             font-family: 'Rethink Sans', sans-serif;
             font-size: 0.7rem;
             font-weight: 700;
-            color: var(--green-dark);
-            letter-spacing: 0.04em;
-            margin-bottom: 0.1rem;
+            color: var(--green);
+            letter-spacing: 0.05em;
+            margin-bottom: 0.15rem;
         }
 
         .timeline-who {
@@ -396,14 +383,14 @@
         .timeline-what {
             font-size: 0.9rem;
             color: var(--text-secondary);
-            margin-top: 0.3rem;
+            margin-top: 0.4rem;
             line-height: 1.75;
         }
 
         .timeline-link {
             font-family: 'Rethink Sans', sans-serif;
             font-size: 0.72rem;
-            font-weight: 500;
+            font-weight: 600;
             color: var(--green);
             text-decoration: none;
         }
@@ -414,10 +401,9 @@
 
         /* ---- ARGUMENT CARDS ---- */
         .argument-card {
-            background: var(--bg);
             padding: 2rem;
-            margin-bottom: 1rem;
-            box-shadow: var(--shadow);
+            margin-bottom: 1.5rem;
+            border: 1px solid var(--border);
         }
 
         .argument-dismissal {
@@ -447,7 +433,7 @@
             font-family: 'Rethink Sans', sans-serif;
             font-size: 0.72rem;
             color: var(--green);
-            font-weight: 500;
+            font-weight: 600;
             text-decoration: none;
         }
 
@@ -459,18 +445,17 @@
         .researcher-grid {
             display: grid;
             grid-template-columns: 1fr 1fr;
-            gap: 1rem;
+            gap: 1.5rem;
         }
 
         .researcher-card {
-            background: var(--bg);
             padding: 1.8rem;
-            box-shadow: var(--shadow);
-            transition: box-shadow 0.2s;
+            border: 1px solid var(--border);
+            transition: border-color 0.2s;
         }
 
         .researcher-card:hover {
-            box-shadow: var(--shadow-hover);
+            border-color: var(--green);
         }
 
         .researcher-card h3 {
@@ -483,12 +468,12 @@
 
         .researcher-card .role {
             font-family: 'Rethink Sans', sans-serif;
-            font-size: 0.72rem;
-            color: var(--green-dark);
-            font-weight: 500;
-            margin-bottom: 0.5rem;
+            font-size: 0.7rem;
+            color: var(--green);
+            font-weight: 600;
+            margin-bottom: 0.6rem;
             text-transform: uppercase;
-            letter-spacing: 0.03em;
+            letter-spacing: 0.06em;
         }
 
         .researcher-card p {
@@ -498,13 +483,13 @@
         }
 
         .researcher-card .researcher-links {
-            margin-top: 0.7rem;
+            margin-top: 0.8rem;
         }
 
         .researcher-card .researcher-links a {
             font-family: 'Rethink Sans', sans-serif;
             font-size: 0.72rem;
-            font-weight: 500;
+            font-weight: 600;
             color: var(--green);
             text-decoration: none;
             margin-right: 1rem;
@@ -518,24 +503,24 @@
         .action-grid {
             display: grid;
             grid-template-columns: 1fr 1fr;
-            gap: 1rem;
+            gap: 1.5rem;
         }
 
         .action-card {
-            background: var(--green-light);
             padding: 1.8rem;
-            transition: box-shadow 0.2s;
+            border: 1px solid var(--border);
+            transition: border-color 0.2s;
         }
 
         .action-card:hover {
-            box-shadow: var(--shadow);
+            border-color: var(--green);
         }
 
         .action-card h3 {
             font-family: 'Hedvig Letters Serif', Georgia, serif;
             font-weight: 600;
             font-size: 1rem;
-            color: var(--green-dark);
+            color: var(--text);
             margin-bottom: 0.5rem;
         }
 
@@ -561,8 +546,8 @@
         }
 
         .reading-item {
-            padding: 0.65rem 0;
-            border-bottom: 1px solid var(--border);
+            padding: 0.7rem 0;
+            border-bottom: 1px solid #f0f0f0;
             display: flex;
             justify-content: space-between;
             align-items: baseline;
@@ -586,7 +571,7 @@
         .reading-item a {
             font-family: 'Rethink Sans', sans-serif;
             font-size: 0.72rem;
-            font-weight: 500;
+            font-weight: 600;
             color: var(--green);
             text-decoration: none;
             white-space: nowrap;
@@ -600,9 +585,10 @@
         /* ---- POETRY BRIDGE ---- */
         .poetry-bridge {
             text-align: center;
-            padding: 4rem 2rem;
-            background: var(--green-light);
-            margin-top: 3rem;
+            padding: 4.5rem 2rem;
+            border-top: 1px solid var(--border);
+            border-bottom: 1px solid var(--border);
+            margin-top: 3.5rem;
         }
 
         .poetry-bridge p {
@@ -612,14 +598,14 @@
             color: var(--text-secondary);
             line-height: 1.9;
             max-width: 480px;
-            margin: 0 auto 1.5rem;
+            margin: 0 auto 1.8rem;
         }
 
         .poetry-bridge a {
             font-family: 'Rethink Sans', sans-serif;
             font-size: 0.8rem;
             font-weight: 600;
-            color: var(--bg);
+            color: #fff;
             background: var(--green);
             text-decoration: none;
             padding: 0.65rem 2rem;
@@ -636,9 +622,7 @@
         footer {
             text-align: center;
             padding: 3rem 2rem;
-            border-top: 1px solid var(--border);
             margin-top: 4rem;
-            background: var(--bg);
         }
 
         footer p {
@@ -688,7 +672,7 @@
             display: none;
             position: fixed;
             inset: 0;
-            background: rgba(0,0,0,0.25);
+            background: rgba(0,0,0,0.2);
             z-index: 199;
         }
 
@@ -705,6 +689,7 @@
             .main { margin-left: 0; padding-top: 56px; }
             .content { padding: 0 1.5rem; }
             .hero h2 { font-size: 2rem; }
+            .hero { padding: 3rem 0 2.5rem; }
             .evidence-grid,
             .researcher-grid,
             .action-grid { grid-template-columns: 1fr; }
