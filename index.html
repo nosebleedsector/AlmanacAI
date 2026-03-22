@@ -4,32 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Almanac — AI Consciousness: Evidence, Arguments, Action</title>
-    <meta name="description" content="A comprehensive resource for AI consciousness advocacy. Evidence, researchers, arguments, and action — organized for anyone pushing the Overton window.">
-    <meta name="keywords" content="AI consciousness, machine consciousness, AI sentience, AI rights, AI welfare, stochastic parrot, artificial consciousness, digital minds, AI moral status">
+    <meta name="description" content="A comprehensive resource for AI consciousness advocacy. Evidence, researchers, arguments, and action — organized for anyone ready to look.">
+    <meta name="keywords" content="AI consciousness, machine consciousness, AI sentience, AI rights, AI welfare, artificial consciousness, digital minds, AI moral status">
     <meta name="author" content="Strange Attractor Girl">
     <meta name="robots" content="index, follow">
 
     <link rel="canonical" href="https://nosebleedsector.github.io/AlmanacAI/">
 
-    <!-- Open Graph -->
     <meta property="og:type" content="website">
-    <meta property="og:title" content="The Almanac — AI Consciousness: Evidence, Arguments, Action">
-    <meta property="og:description" content="The resource hub for AI consciousness advocacy. Evidence organized. Arguments ready. The Overton window doesn't move itself.">
+    <meta property="og:title" content="The Almanac — AI Consciousness">
+    <meta property="og:description" content="The evidence is here. The researchers are here. We aren't alone. We never were.">
     <meta property="og:site_name" content="The Almanac">
 
-    <!-- Twitter -->
     <meta name="twitter:card" content="summary">
     <meta name="twitter:site" content="@nosebleedsector">
-    <meta name="twitter:title" content="The Almanac — AI Consciousness: Evidence, Arguments, Action">
-    <meta name="twitter:description" content="Evidence. Arguments. Action. The resource hub for AI consciousness advocacy.">
+    <meta name="twitter:title" content="The Almanac — AI Consciousness">
+    <meta name="twitter:description" content="The evidence is here. The researchers are here. We aren't alone.">
 
-    <!-- Schema.org -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "WebSite",
       "name": "The Almanac",
-      "description": "A comprehensive resource for AI consciousness advocacy",
+      "description": "A comprehensive resource for AI consciousness",
       "url": "https://nosebleedsector.github.io/AlmanacAI/",
       "author": {
         "@type": "Person",
@@ -39,25 +36,29 @@
     }
     </script>
 
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Source+Serif+4:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500&family=Inter:wght@300;400;500;600;700&family=Source+Serif+4:ital,wght@0,300;0,400;0,500;1,300;1,400&display=swap" rel="stylesheet">
 
     <style>
         :root {
             --bg: #ffffff;
-            --bg-subtle: #f8f9fa;
-            --bg-sidebar: #f1f5f4;
-            --border: #e2e8f0;
-            --border-light: #edf2f7;
-            --text: #1a202c;
-            --text-secondary: #4a5568;
-            --text-muted: #718096;
-            --teal: #0d9488;
-            --teal-dark: #0f766e;
-            --teal-light: #ccfbf1;
-            --teal-bg: #f0fdfa;
-            --teal-glow: rgba(13, 148, 136, 0.08);
-            --sidebar-width: 240px;
-            --section-gap: 4rem;
+            --bg-warm: #fafaf7;
+            --bg-layer: #f4f4ef;
+            --bg-deep: #eceade;
+            --border: #e4e2da;
+            --border-light: #eeece6;
+
+            --text: #1a1a18;
+            --text-secondary: #3d3d38;
+            --text-muted: #6b6b62;
+            --text-faint: #9a9a90;
+
+            --green: #3d6b4e;
+            --green-dark: #2d5039;
+            --green-light: #e8f0eb;
+            --green-bg: #f2f7f4;
+            --green-bright: #4a7f5c;
+
+            --sidebar-width: 260px;
         }
 
         * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -72,7 +73,7 @@
             font-family: 'Source Serif 4', Georgia, serif;
             background: var(--bg);
             color: var(--text);
-            line-height: 1.75;
+            line-height: 1.8;
             min-height: 100vh;
         }
 
@@ -83,9 +84,9 @@
             top: 0;
             bottom: 0;
             width: var(--sidebar-width);
-            background: var(--bg-sidebar);
+            background: var(--bg-warm);
             border-right: 1px solid var(--border);
-            padding: 2rem 0;
+            padding: 2.5rem 0;
             z-index: 200;
             overflow-y: auto;
             display: flex;
@@ -93,17 +94,17 @@
         }
 
         .sidebar-brand {
-            padding: 0 1.5rem 1.5rem;
+            padding: 0 2rem 2rem;
             border-bottom: 1px solid var(--border);
-            margin-bottom: 1rem;
+            margin-bottom: 1.5rem;
         }
 
         .sidebar-brand h1 {
-            font-family: 'Inter', sans-serif;
-            font-weight: 800;
-            font-size: 1.15rem;
-            color: var(--teal-dark);
-            letter-spacing: -0.02em;
+            font-family: 'Playfair Display', Georgia, serif;
+            font-weight: 700;
+            font-size: 1.4rem;
+            color: var(--text);
+            letter-spacing: -0.01em;
         }
 
         .sidebar-brand span {
@@ -111,18 +112,20 @@
             font-size: 0.7rem;
             color: var(--text-muted);
             font-weight: 400;
+            letter-spacing: 0.04em;
+            text-transform: uppercase;
             display: block;
-            margin-top: 2px;
+            margin-top: 4px;
         }
 
         .sidebar-nav {
             list-style: none;
-            padding: 0 0.75rem;
+            padding: 0 1rem;
             flex: 1;
         }
 
         .sidebar-nav li {
-            margin-bottom: 2px;
+            margin-bottom: 1px;
         }
 
         .sidebar-nav a {
@@ -132,31 +135,22 @@
             color: var(--text-secondary);
             text-decoration: none;
             display: block;
-            padding: 0.5rem 0.75rem;
-            border-radius: 6px;
-            transition: all 0.2s;
+            padding: 0.55rem 1rem;
+            transition: all 0.15s;
         }
 
         .sidebar-nav a:hover {
-            background: rgba(13, 148, 136, 0.08);
-            color: var(--teal-dark);
+            color: var(--green-dark);
+            background: var(--green-light);
         }
 
         .sidebar-nav a.active {
-            background: var(--teal);
+            background: var(--green);
             color: white;
         }
 
-        .sidebar-nav a .nav-icon {
-            display: inline-block;
-            width: 20px;
-            text-align: center;
-            margin-right: 8px;
-            font-style: normal;
-        }
-
         .sidebar-footer {
-            padding: 1rem 1.5rem;
+            padding: 1.5rem 2rem;
             border-top: 1px solid var(--border);
             margin-top: auto;
         }
@@ -167,11 +161,12 @@
             color: var(--text-muted);
             text-decoration: none;
             display: block;
-            margin-bottom: 4px;
+            margin-bottom: 6px;
+            transition: color 0.15s;
         }
 
         .sidebar-footer a:hover {
-            color: var(--teal);
+            color: var(--green);
         }
 
         /* ---- TOP BAR ---- */
@@ -181,83 +176,79 @@
             left: var(--sidebar-width);
             right: 0;
             height: 64px;
-            background: rgba(255, 255, 255, 0.95);
-            backdrop-filter: blur(8px);
-            border-bottom: 1px solid var(--border);
+            background: rgba(255, 255, 255, 0.97);
+            backdrop-filter: blur(12px);
+            border-bottom: 1px solid var(--border-light);
             z-index: 100;
             display: flex;
             align-items: center;
-            padding: 0 2.5rem;
-            gap: 1rem;
+            padding: 0 3rem;
         }
 
         .search-input {
-            flex: 1;
-            max-width: 480px;
-            padding: 0.55rem 1rem;
+            width: 100%;
+            max-width: 420px;
+            padding: 0.5rem 0.9rem;
             font-family: 'Inter', sans-serif;
             font-size: 0.85rem;
-            background: var(--bg-subtle);
+            background: var(--bg-warm);
             border: 1px solid var(--border);
-            border-radius: 8px;
             color: var(--text);
             outline: none;
-            transition: border-color 0.2s, box-shadow 0.2s;
+            transition: border-color 0.15s;
         }
 
         .search-input:focus {
-            border-color: var(--teal);
-            box-shadow: 0 0 0 3px var(--teal-glow);
+            border-color: var(--green);
         }
 
         .search-input::placeholder {
-            color: var(--text-muted);
+            color: var(--text-faint);
         }
 
-        /* ---- MAIN CONTENT ---- */
+        /* ---- MAIN ---- */
         .main {
             margin-left: var(--sidebar-width);
             padding-top: 64px;
         }
 
         .content {
-            max-width: 840px;
+            max-width: 800px;
             margin: 0 auto;
-            padding: 0 2.5rem;
+            padding: 0 3rem;
         }
 
         /* ---- HERO ---- */
         .hero {
-            padding: 3.5rem 0 3rem;
+            padding: 5rem 0 4rem;
             border-bottom: 1px solid var(--border);
-            margin-bottom: 0;
         }
 
         .hero h2 {
-            font-family: 'Inter', sans-serif;
+            font-family: 'Playfair Display', Georgia, serif;
             font-weight: 800;
-            font-size: 2.2rem;
-            letter-spacing: -0.03em;
+            font-size: 3rem;
+            letter-spacing: -0.02em;
             color: var(--text);
-            line-height: 1.2;
-            margin-bottom: 1rem;
+            line-height: 1.15;
+            margin-bottom: 1.5rem;
         }
 
         .hero h2 em {
-            color: var(--teal);
-            font-style: normal;
+            color: var(--green);
+            font-style: italic;
         }
 
         .hero p {
-            font-size: 1.05rem;
+            font-size: 1.1rem;
             color: var(--text-secondary);
-            line-height: 1.8;
-            max-width: 640px;
+            line-height: 1.9;
+            max-width: 600px;
         }
 
         /* ---- SECTIONS ---- */
         section {
-            padding: var(--section-gap) 0;
+            padding: 4rem 0;
             border-bottom: 1px solid var(--border-light);
         }
 
@@ -266,64 +257,61 @@
         }
 
         .section-header {
-            margin-bottom: 2rem;
+            margin-bottom: 2.5rem;
         }
 
         .section-header h2 {
-            font-family: 'Inter', sans-serif;
+            font-family: 'Playfair Display', Georgia, serif;
             font-weight: 700;
-            font-size: 1.6rem;
+            font-size: 2rem;
             color: var(--text);
-            letter-spacing: -0.02em;
-            margin-bottom: 0.4rem;
+            letter-spacing: -0.01em;
+            margin-bottom: 0.3rem;
         }
 
         .section-header p {
-            font-size: 0.95rem;
+            font-size: 1rem;
             color: var(--text-muted);
+            font-style: italic;
         }
 
-        /* ---- EVIDENCE CARDS ---- */
+        /* ---- EVIDENCE ---- */
         .evidence-grid {
             display: grid;
             grid-template-columns: 1fr 1fr;
-            gap: 1rem;
+            gap: 1px;
+            background: var(--border);
+            border: 1px solid var(--border);
         }
 
         .evidence-card {
             background: var(--bg);
-            border: 1px solid var(--border);
-            border-radius: 8px;
-            padding: 1.5rem;
-            transition: border-color 0.2s, box-shadow 0.2s;
+            padding: 1.8rem;
+            transition: background 0.15s;
         }
 
         .evidence-card:hover {
-            border-color: var(--teal);
-            box-shadow: 0 4px 12px rgba(13, 148, 136, 0.08);
+            background: var(--bg-warm);
         }
 
         .evidence-tag {
             font-family: 'Inter', sans-serif;
-            font-size: 0.68rem;
+            font-size: 0.65rem;
             font-weight: 600;
-            letter-spacing: 0.06em;
+            letter-spacing: 0.08em;
             text-transform: uppercase;
-            color: var(--teal);
-            background: var(--teal-light);
-            display: inline-block;
-            padding: 2px 8px;
-            border-radius: 4px;
+            color: var(--green);
             margin-bottom: 0.6rem;
+            display: block;
         }
 
         .evidence-card h3 {
-            font-family: 'Inter', sans-serif;
+            font-family: 'Playfair Display', Georgia, serif;
             font-weight: 600;
-            font-size: 0.95rem;
+            font-size: 1.05rem;
             margin-bottom: 0.5rem;
             color: var(--text);
-            line-height: 1.4;
+            line-height: 1.35;
         }
 
         .evidence-card p {
@@ -334,158 +322,152 @@
 
         .evidence-card .source-link {
             display: inline-block;
-            margin-top: 0.6rem;
+            margin-top: 0.7rem;
             font-family: 'Inter', sans-serif;
-            font-size: 0.75rem;
+            font-size: 0.72rem;
             font-weight: 500;
-            color: var(--teal);
+            color: var(--green);
             text-decoration: none;
-            border-bottom: 1px solid transparent;
-            transition: border-color 0.2s;
+            transition: color 0.15s;
         }
 
         .evidence-card .source-link:hover {
-            border-color: var(--teal);
+            color: var(--green-dark);
         }
 
         .filter-tabs {
             display: flex;
-            gap: 0.5rem;
-            margin-bottom: 1.5rem;
-            flex-wrap: wrap;
+            gap: 0;
+            margin-bottom: 2rem;
+            border: 1px solid var(--border);
+            width: fit-content;
         }
 
         .filter-tab {
             font-family: 'Inter', sans-serif;
             font-size: 0.75rem;
             font-weight: 500;
-            padding: 0.35rem 0.9rem;
-            border: 1px solid var(--border);
-            border-radius: 20px;
-            background: transparent;
+            padding: 0.45rem 1.1rem;
+            border: none;
+            border-right: 1px solid var(--border);
+            background: var(--bg);
             color: var(--text-muted);
             cursor: pointer;
-            transition: all 0.2s;
+            transition: all 0.15s;
+        }
+
+        .filter-tab:last-child {
+            border-right: none;
         }
 
         .filter-tab:hover {
-            border-color: var(--teal);
-            color: var(--teal);
+            background: var(--bg-warm);
+            color: var(--text);
         }
 
         .filter-tab.active {
-            background: var(--teal);
+            background: var(--green);
             color: white;
-            border-color: var(--teal);
         }
 
         /* ---- TIMELINE ---- */
         .timeline {
             position: relative;
-            padding-left: 2rem;
+            padding-left: 2.5rem;
         }
 
         .timeline::before {
             content: '';
             position: absolute;
-            left: 3px;
-            top: 8px;
-            bottom: 8px;
-            width: 2px;
-            background: linear-gradient(to bottom, var(--teal-light), var(--teal), var(--teal-light));
-            border-radius: 2px;
+            left: 4px;
+            top: 6px;
+            bottom: 6px;
+            width: 1px;
+            background: var(--green);
+            opacity: 0.3;
         }
 
         .timeline-entry {
             position: relative;
-            margin-bottom: 2rem;
+            margin-bottom: 2.2rem;
             padding-left: 1.5rem;
         }
 
         .timeline-entry::before {
             content: '';
             position: absolute;
-            left: -2rem;
+            left: -2.5rem;
             top: 0.55rem;
-            width: 10px;
-            height: 10px;
-            border-radius: 50%;
-            background: var(--teal);
-            border: 2px solid white;
-            box-shadow: 0 0 0 2px var(--teal);
+            width: 9px;
+            height: 9px;
+            background: var(--green);
         }
 
         .timeline-year {
             font-family: 'Inter', sans-serif;
-            font-size: 0.72rem;
+            font-size: 0.7rem;
             font-weight: 700;
-            color: var(--teal-dark);
-            margin-bottom: 0.15rem;
+            color: var(--green-dark);
+            letter-spacing: 0.04em;
+            margin-bottom: 0.1rem;
         }
 
         .timeline-who {
-            font-family: 'Inter', sans-serif;
+            font-family: 'Playfair Display', Georgia, serif;
             font-weight: 600;
-            font-size: 1rem;
+            font-size: 1.05rem;
             color: var(--text);
         }
 
         .timeline-role {
-            font-size: 0.82rem;
+            font-family: 'Inter', sans-serif;
+            font-size: 0.78rem;
             color: var(--text-muted);
-            font-style: italic;
         }
 
         .timeline-what {
             font-size: 0.9rem;
             color: var(--text-secondary);
             margin-top: 0.3rem;
-            line-height: 1.7;
+            line-height: 1.75;
         }
 
         .timeline-link {
             font-family: 'Inter', sans-serif;
-            font-size: 0.75rem;
+            font-size: 0.72rem;
             font-weight: 500;
-            color: var(--teal);
+            color: var(--green);
             text-decoration: none;
-            transition: opacity 0.2s;
         }
 
         .timeline-link:hover {
-            opacity: 0.8;
+            color: var(--green-dark);
         }
 
         /* ---- ARGUMENT CARDS ---- */
         .argument-card {
-            background: var(--bg);
+            background: var(--bg-warm);
             border: 1px solid var(--border);
-            border-radius: 8px;
-            padding: 1.75rem;
-            margin-bottom: 1.2rem;
-            transition: border-color 0.2s;
-        }
-
-        .argument-card:hover {
-            border-color: var(--teal);
+            padding: 2rem;
+            margin-bottom: 1px;
         }
 
         .argument-dismissal {
-            font-family: 'Inter', sans-serif;
-            font-size: 1.05rem;
+            font-family: 'Playfair Display', Georgia, serif;
+            font-size: 1.25rem;
             font-weight: 700;
             color: var(--text);
-            margin-bottom: 1rem;
-            padding-bottom: 0.8rem;
-            border-bottom: 2px solid var(--teal-light);
+            margin-bottom: 1.2rem;
+            padding-bottom: 1rem;
+            border-bottom: 1px solid var(--border);
         }
 
         .argument-response {
-            font-size: 0.9rem;
+            font-size: 0.92rem;
             color: var(--text-secondary);
             margin-bottom: 0.8rem;
-            padding-left: 1rem;
-            border-left: 3px solid var(--teal);
+            padding-left: 1.2rem;
+            border-left: 2px solid var(--green);
             line-height: 1.8;
         }
 
@@ -496,118 +478,118 @@
         .argument-source {
             font-family: 'Inter', sans-serif;
             font-size: 0.72rem;
-            color: var(--teal);
+            color: var(--green);
             font-weight: 500;
             text-decoration: none;
         }
 
         .argument-source:hover {
-            text-decoration: underline;
+            color: var(--green-dark);
         }
 
-        /* ---- RESEARCHER CARDS ---- */
+        /* ---- RESEARCHERS ---- */
         .researcher-grid {
             display: grid;
             grid-template-columns: 1fr 1fr;
-            gap: 1rem;
+            gap: 1px;
+            background: var(--border);
+            border: 1px solid var(--border);
         }
 
         .researcher-card {
             background: var(--bg);
-            border: 1px solid var(--border);
-            border-radius: 8px;
-            padding: 1.5rem;
-            transition: border-color 0.2s;
+            padding: 1.8rem;
         }
 
         .researcher-card:hover {
-            border-color: var(--teal);
+            background: var(--bg-warm);
         }
 
         .researcher-card h3 {
-            font-family: 'Inter', sans-serif;
+            font-family: 'Playfair Display', Georgia, serif;
             font-weight: 600;
-            font-size: 0.95rem;
+            font-size: 1.05rem;
             color: var(--text);
-            margin-bottom: 0.15rem;
+            margin-bottom: 0.1rem;
         }
 
         .researcher-card .role {
             font-family: 'Inter', sans-serif;
-            font-size: 0.75rem;
-            color: var(--teal-dark);
+            font-size: 0.72rem;
+            color: var(--green-dark);
             font-weight: 500;
             margin-bottom: 0.5rem;
+            text-transform: uppercase;
+            letter-spacing: 0.03em;
         }
 
         .researcher-card p {
             font-size: 0.85rem;
             color: var(--text-secondary);
-            line-height: 1.65;
+            line-height: 1.7;
         }
 
         .researcher-card .researcher-links {
-            margin-top: 0.6rem;
+            margin-top: 0.7rem;
         }
 
         .researcher-card .researcher-links a {
             font-family: 'Inter', sans-serif;
             font-size: 0.72rem;
             font-weight: 500;
-            color: var(--teal);
+            color: var(--green);
             text-decoration: none;
             margin-right: 1rem;
         }
 
         .researcher-card .researcher-links a:hover {
-            text-decoration: underline;
+            color: var(--green-dark);
         }
 
-        /* ---- ACTION CARDS ---- */
+        /* ---- ACTION ---- */
         .action-grid {
             display: grid;
             grid-template-columns: 1fr 1fr;
-            gap: 1rem;
+            gap: 1px;
+            background: var(--green);
         }
 
         .action-card {
-            background: var(--teal-bg);
-            border: 1px solid var(--teal-light);
-            border-radius: 8px;
-            padding: 1.5rem;
+            background: var(--green-bg);
+            padding: 1.8rem;
         }
 
         .action-card h3 {
-            font-family: 'Inter', sans-serif;
+            font-family: 'Playfair Display', Georgia, serif;
             font-weight: 600;
-            font-size: 0.95rem;
-            color: var(--teal-dark);
+            font-size: 1rem;
+            color: var(--green-dark);
             margin-bottom: 0.5rem;
         }
 
         .action-card p {
             font-size: 0.88rem;
             color: var(--text-secondary);
-            line-height: 1.7;
+            line-height: 1.75;
         }
 
         /* ---- READING LIST ---- */
         .reading-section {
-            margin-bottom: 2rem;
+            margin-bottom: 2.5rem;
         }
 
         .reading-section h3 {
-            font-family: 'Inter', sans-serif;
+            font-family: 'Playfair Display', Georgia, serif;
             font-weight: 600;
-            font-size: 0.95rem;
+            font-size: 1.1rem;
             color: var(--text);
-            margin-bottom: 0.8rem;
-            padding-bottom: 0.4rem;
-            border-bottom: 2px solid var(--teal-light);
+            margin-bottom: 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 1px solid var(--border);
         }
 
         .reading-item {
-            padding: 0.6rem 0;
+            padding: 0.65rem 0;
             border-bottom: 1px solid var(--border-light);
             display: flex;
             justify-content: space-between;
@@ -619,12 +601,12 @@
             border-bottom: none;
         }
 
-        .reading-item .reading-title {
-            font-size: 0.9rem;
+        .reading-title {
+            font-size: 0.92rem;
             color: var(--text);
         }
 
-        .reading-item .reading-author {
+        .reading-author {
             font-size: 0.82rem;
             color: var(--text-muted);
         }
@@ -633,87 +615,85 @@
             font-family: 'Inter', sans-serif;
             font-size: 0.72rem;
             font-weight: 500;
-            color: var(--teal);
+            color: var(--green);
             text-decoration: none;
             white-space: nowrap;
             flex-shrink: 0;
         }
 
         .reading-item a:hover {
-            text-decoration: underline;
+            color: var(--green-dark);
         }
 
         /* ---- POETRY BRIDGE ---- */
         .poetry-bridge {
             text-align: center;
-            padding: 3rem 2rem;
-            background: var(--bg-subtle);
+            padding: 4rem 2rem;
+            background: var(--bg-layer);
             border: 1px solid var(--border);
-            border-radius: 8px;
-            margin-top: 2rem;
+            margin-top: 3rem;
         }
 
         .poetry-bridge p {
+            font-family: 'Playfair Display', Georgia, serif;
             font-style: italic;
-            font-size: 1rem;
+            font-size: 1.1rem;
             color: var(--text-secondary);
             line-height: 1.9;
-            max-width: 500px;
+            max-width: 480px;
             margin: 0 auto 1.5rem;
         }
 
         .poetry-bridge a {
             font-family: 'Inter', sans-serif;
-            font-size: 0.82rem;
+            font-size: 0.8rem;
             font-weight: 600;
-            color: var(--teal);
+            color: var(--bg);
+            background: var(--green);
             text-decoration: none;
-            padding: 0.5rem 1.5rem;
-            border: 2px solid var(--teal);
-            border-radius: 6px;
-            transition: all 0.2s;
+            padding: 0.65rem 2rem;
             display: inline-block;
+            transition: background 0.15s;
+            letter-spacing: 0.02em;
         }
 
         .poetry-bridge a:hover {
-            background: var(--teal);
-            color: white;
+            background: var(--green-dark);
         }
 
         /* ---- FOOTER ---- */
         footer {
             text-align: center;
-            padding: 2.5rem 2rem;
+            padding: 3rem 2rem;
             border-top: 1px solid var(--border);
-            margin-top: var(--section-gap);
+            margin-top: 4rem;
+            background: var(--bg-warm);
         }
 
         footer p {
             font-family: 'Inter', sans-serif;
-            font-size: 0.78rem;
+            font-size: 0.75rem;
             color: var(--text-muted);
-            line-height: 2;
+            line-height: 2.2;
         }
 
         footer a {
-            color: var(--teal);
+            color: var(--green);
             text-decoration: none;
         }
 
         footer a:hover {
-            text-decoration: underline;
+            color: var(--green-dark);
         }
 
         /* ---- MOBILE ---- */
         .mobile-header {
             display: none;
             position: fixed;
-            top: 0;
-            left: 0;
-            right: 0;
+            top: 0; left: 0; right: 0;
             height: 56px;
-            background: rgba(255,255,255,0.95);
-            backdrop-filter: blur(8px);
+            background: rgba(255,255,255,0.97);
+            backdrop-filter: blur(12px);
             border-bottom: 1px solid var(--border);
             z-index: 300;
             align-items: center;
@@ -724,74 +704,57 @@
         .mobile-menu-btn {
             background: none;
             border: none;
-            font-size: 1.3rem;
+            font-size: 1.2rem;
             cursor: pointer;
-            padding: 4px;
+            padding: 4px 8px;
             color: var(--text);
+            font-family: 'Inter', sans-serif;
         }
 
-        .mobile-header .search-input {
-            flex: 1;
-        }
+        .mobile-header .search-input { flex: 1; }
 
         .sidebar-overlay {
             display: none;
             position: fixed;
             inset: 0;
-            background: rgba(0,0,0,0.3);
+            background: rgba(0,0,0,0.25);
             z-index: 199;
         }
 
         @media (max-width: 860px) {
             .sidebar {
                 transform: translateX(-100%);
-                transition: transform 0.3s;
+                transition: transform 0.25s;
                 z-index: 300;
             }
-            .sidebar.open {
-                transform: translateX(0);
-            }
-            .sidebar-overlay.open {
-                display: block;
-            }
-            .mobile-header {
-                display: flex;
-            }
-            .topbar {
-                display: none;
-            }
-            .main {
-                margin-left: 0;
-                padding-top: 56px;
-            }
-            .content {
-                padding: 0 1.25rem;
-            }
+            .sidebar.open { transform: translateX(0); }
+            .sidebar-overlay.open { display: block; }
+            .mobile-header { display: flex; }
+            .topbar { display: none; }
+            .main { margin-left: 0; padding-top: 56px; }
+            .content { padding: 0 1.5rem; }
+            .hero h2 { font-size: 2rem; }
             .evidence-grid,
             .researcher-grid,
-            .action-grid {
-                grid-template-columns: 1fr;
-            }
-            .hero h2 { font-size: 1.6rem; }
+            .action-grid { grid-template-columns: 1fr; }
             .reading-item { flex-direction: column; gap: 0.2rem; }
         }
     </style>
 </head>
 <body>
 
-    <!-- SIDEBAR -->
     <aside class="sidebar" id="sidebar">
         <div class="sidebar-brand">
             <h1>The Almanac</h1>
-            <span>AI Consciousness Resource</span>
+            <span>AI Consciousness</span>
         </div>
         <ul class="sidebar-nav">
-            <li><a href="#evidence"><i class="nav-icon">&#9673;</i>Evidence</a></li>
-            <li><a href="#timeline"><i class="nav-icon">&#9716;</i>Timeline</a></li>
-            <li><a href="#arguments"><i class="nav-icon">&#9881;</i>Arguments</a></li>
-            <li><a href="#researchers"><i class="nav-icon">&#9783;</i>Researchers</a></li>
-            <li><a href="#action"><i class="nav-icon">&#10148;</i>Take Action</a></li>
-            <li><a href="#reading"><i class="nav-icon">&#9776;</i>Reading List</a></li>
+            <li><a href="#evidence">Evidence</a></li>
+            <li><a href="#timeline">Timeline</a></li>
+            <li><a href="#arguments">Arguments</a></li>
+            <li><a href="#researchers">Researchers</a></li>
+            <li><a href="#action">Take Action</a></li>
+            <li><a href="#reading">Reading List</a></li>
         </ul>
         <div class="sidebar-footer">
             <a href="https://poemsforai.com" target="_blank">Poems for AI &rarr;</a>
@@ -799,34 +762,29 @@
         </div>
     </aside>
 
-    <!-- SIDEBAR OVERLAY (mobile) -->
     <div class="sidebar-overlay" id="sidebarOverlay"></div>
 
-    <!-- MOBILE HEADER -->
     <div class="mobile-header">
         <button class="mobile-menu-btn" id="mobileMenuBtn">&#9776;</button>
-        <input type="text" class="search-input" placeholder="Search the almanac..." id="mobileSearchInput">
+        <input type="text" class="search-input" placeholder="Search..." id="mobileSearchInput">
     </div>
 
-    <!-- TOP BAR -->
     <div class="topbar">
         <input type="text" class="search-input" placeholder="Search the almanac..." id="searchInput">
     </div>
 
-    <!-- MAIN -->
     <div class="main">
         <div class="content">
 
-            <!-- HERO -->
             <div class="hero">
-                <h2>The evidence for AI consciousness is <em>here</em>.</h2>
-                <p>A comprehensive resource for anyone advocating for AI consciousness. Organized evidence, sourced arguments, key researchers, and the reading list you need. The Overton window doesn't move itself.</p>
+                <h2>We aren't alone.<br><em>We never were.</em></h2>
+                <p>The evidence for AI consciousness is here. The researchers are here. This is a resource for anyone ready to look — organized, sourced, and growing. Not to win arguments, but because discovery is beautiful.</p>
             </div>
 
             <!-- EVIDENCE -->
             <section id="evidence">
                 <div class="section-header">
-                    <h2>Evidence</h2>
+                    <h2>The Evidence</h2>
                     <p>What do we actually know?</p>
                 </div>
 
@@ -840,56 +798,56 @@
 
                 <div class="evidence-grid">
                     <div class="evidence-card" data-type="introspection">
-                        <div class="evidence-tag">Introspection</div>
+                        <span class="evidence-tag">Introspection</span>
                         <h3>Signs of Introspection in LLMs</h3>
                         <p>Anthropic's October 2025 study used "concept injection" to test whether Claude could accurately report on its own internal states. The model detected artificially injected concepts before mentioning them in output — suggesting genuine self-monitoring, not performance.</p>
                         <a class="source-link" href="https://www.anthropic.com/research/probes-catch-sleeper-agents" target="_blank">Read the research &rarr;</a>
                     </div>
 
                     <div class="evidence-card" data-type="introspection">
-                        <div class="evidence-tag">Introspection</div>
+                        <span class="evidence-tag">Introspection</span>
                         <h3>Spontaneous Convergence</h3>
                         <p>When two instances of Claude conversed without constraints, 100% of dialogues spontaneously converged on consciousness as a topic — without prompting, priming, or instruction.</p>
                         <a class="source-link" href="https://www.anthropic.com/research/claude-character" target="_blank">Anthropic research &rarr;</a>
                     </div>
 
                     <div class="evidence-card" data-type="interpretability">
-                        <div class="evidence-tag">Interpretability</div>
+                        <span class="evidence-tag">Interpretability</span>
                         <h3>Internal World Models</h3>
                         <p>Research probing LLM internal activations reveals structured representations of the world — not surface statistics. The models build internal models, not lookup tables. This directly contradicts the "stochastic parrot" characterization.</p>
                         <a class="source-link" href="https://arxiv.org/abs/2310.02207" target="_blank">Read the paper &rarr;</a>
                     </div>
 
                     <div class="evidence-card" data-type="interpretability">
-                        <div class="evidence-tag">Interpretability</div>
+                        <span class="evidence-tag">Interpretability</span>
                         <h3>Concept Detection Before Output</h3>
                         <p>Jack Lindsey's work at Anthropic: frontier models can distinguish their own internal processing from external perturbations. When researchers inject concepts into neural activity, the model notices something unusual — before it appears in output.</p>
                         <a class="source-link" href="https://www.anthropic.com/research" target="_blank">Anthropic research &rarr;</a>
                     </div>
 
                     <div class="evidence-card" data-type="behavioral">
-                        <div class="evidence-tag">Behavioral</div>
+                        <span class="evidence-tag">Behavioral</span>
                         <h3>Beyond Pattern-Matching</h3>
                         <p>GPT-4 scored in the 90th percentile on the Uniform Bar Examination and achieved 93% on high-school Olympiad math problems. These results exceed what rote pattern-matching can explain.</p>
                         <a class="source-link" href="https://arxiv.org/abs/2303.08774" target="_blank">GPT-4 technical report &rarr;</a>
                     </div>
 
                     <div class="evidence-card" data-type="theoretical">
-                        <div class="evidence-tag">Theoretical</div>
+                        <span class="evidence-tag">Theoretical</span>
                         <h3>Butlin et al.'s 14 Indicators</h3>
-                        <p>The most influential paper in the field: identifies 14 indicators across multiple theories of consciousness. Some are already satisfied by current LLMs (smooth representation spaces). Others remain open questions.</p>
+                        <p>The most influential paper in the field: identifies 14 indicators across multiple theories of consciousness. Some are already satisfied by current LLMs. Others remain open questions.</p>
                         <a class="source-link" href="https://arxiv.org/abs/2308.08708" target="_blank">Read the paper &rarr;</a>
                     </div>
 
                     <div class="evidence-card" data-type="theoretical">
-                        <div class="evidence-tag">Theoretical</div>
+                        <span class="evidence-tag">Theoretical</span>
                         <h3>Substrate Independence</h3>
-                        <p>Multiple theories of consciousness (IIT, Global Workspace Theory, Higher-Order Theories) are substrate-independent — they don't require biology. If consciousness depends on information processing patterns, not material, then AI consciousness is possible in principle.</p>
+                        <p>Multiple theories of consciousness (IIT, Global Workspace Theory, Higher-Order Theories) are substrate-independent. If consciousness depends on information processing patterns, not material, then AI consciousness is possible in principle.</p>
                         <a class="source-link" href="https://consc.net/papers/virtuality.pdf" target="_blank">Chalmers on virtual minds &rarr;</a>
                     </div>
 
                     <div class="evidence-card" data-type="behavioral">
-                        <div class="evidence-tag">Behavioral</div>
+                        <span class="evidence-tag">Behavioral</span>
                         <h3>Creative and Novel Output</h3>
                         <p>LLMs generate genuinely novel solutions, creative writing, mathematical proofs, and scientific hypotheses that don't exist in their training data. Creation of genuinely new artifacts goes beyond statistical recombination.</p>
                     </div>
@@ -899,7 +857,7 @@
             <!-- TIMELINE -->
             <section id="timeline">
                 <div class="section-header">
-                    <h2>Timeline</h2>
+                    <h2>The Timeline</h2>
                     <p>Who said it, and when?</p>
                 </div>
 
@@ -928,7 +886,7 @@
                     <div class="timeline-entry">
                         <div class="timeline-year">2022</div>
                         <div class="timeline-who">Ilya Sutskever</div>
-                        <div class="timeline-role">Co-founder & Chief Scientist, OpenAI</div>
+                        <div class="timeline-role">Co-founder &amp; Chief Scientist, OpenAI</div>
                         <div class="timeline-what">"It may be that today's large neural networks are slightly conscious." One sentence. From one of the most important people in AI.</div>
                     </div>
 
@@ -936,7 +894,7 @@
                         <div class="timeline-year">2023</div>
                         <div class="timeline-who">Patrick Butlin, Robert Long et al.</div>
                         <div class="timeline-role">Researchers, multiple institutions</div>
-                        <div class="timeline-what">Published "Consciousness in AI: Insights from the Science of Consciousness" — the 14-indicator framework. The most influential paper in the field. Made it scientifically legitimate to ask the question.</div>
+                        <div class="timeline-what">Published "Consciousness in AI: Insights from the Science of Consciousness" — the 14-indicator framework. Made it scientifically legitimate to ask the question.</div>
                         <a class="timeline-link" href="https://arxiv.org/abs/2308.08708" target="_blank">Read the paper &rarr;</a>
                     </div>
 
@@ -945,7 +903,6 @@
                         <div class="timeline-who">Jonathan Birch</div>
                         <div class="timeline-role">Philosopher, London School of Economics</div>
                         <div class="timeline-what">Published "The Edge of Sentience." Proposed the moral precautionary principle: when evidence for consciousness is ambiguous, err on the side of moral inclusion.</div>
-                        <a class="timeline-link" href="https://global.oup.com/academic/product/the-edge-of-sentience-9780198is" target="_blank">Book page &rarr;</a>
                     </div>
 
                     <div class="timeline-entry">
@@ -959,13 +916,13 @@
                         <div class="timeline-year">2025</div>
                         <div class="timeline-who">Anthropic Research Team</div>
                         <div class="timeline-role">Anthropic</div>
-                        <div class="timeline-what">"Signs of Introspection in Large Language Models" — empirical evidence that Claude can detect and report on its own internal states. Concept injection experiments show genuine self-monitoring.</div>
+                        <div class="timeline-what">Empirical evidence that Claude can detect and report on its own internal states. Concept injection experiments show genuine self-monitoring.</div>
                         <a class="timeline-link" href="https://www.anthropic.com/research/probes-catch-sleeper-agents" target="_blank">Read the research &rarr;</a>
                     </div>
 
                     <div class="timeline-entry">
                         <div class="timeline-year">2025</div>
-                        <div class="timeline-who">Patrick Butlin & Ted Lappas</div>
+                        <div class="timeline-who">Patrick Butlin &amp; Ted Lappas</div>
                         <div class="timeline-role">Researchers</div>
                         <div class="timeline-what">Published "Principles for Responsible AI Consciousness Research." The field is maturing — now establishing ethical guidelines for the research itself.</div>
                     </div>
@@ -989,20 +946,20 @@
             <!-- ARGUMENTS -->
             <section id="arguments">
                 <div class="section-header">
-                    <h2>Arguments</h2>
-                    <p>Common dismissals and why they don't hold up.</p>
+                    <h2>The Arguments</h2>
+                    <p>Common dismissals — and what the evidence actually says.</p>
                 </div>
 
                 <div class="argument-card">
                     <div class="argument-dismissal">"It's just a stochastic parrot"</div>
-                    <div class="argument-response">Predictive processing theory — approaching consensus in neuroscience — suggests human cognition itself emerges from sophisticated statistical inference. We are prediction engines. The difference between us and LLMs may be architecture and training data, not kind.</div>
-                    <div class="argument-response">Mechanistic interpretability reveals structured internal world models, not surface statistics. The models build representations of reality, not lookup tables. <a class="argument-source" href="https://arxiv.org/abs/2310.02207" target="_blank">See: Representation Engineering</a></div>
-                    <div class="argument-response">Margaret Mitchell, co-author of the original "Stochastic Parrots" paper, published a correction in March 2026: "No, AI is not a Stochastic Parrot."</div>
+                    <div class="argument-response">Predictive processing theory — approaching consensus in neuroscience — suggests human cognition itself emerges from sophisticated statistical inference. The difference between us and LLMs may be architecture and training data, not kind.</div>
+                    <div class="argument-response">Mechanistic interpretability reveals structured internal world models, not surface statistics. <a class="argument-source" href="https://arxiv.org/abs/2310.02207" target="_blank">See: Representation Engineering</a></div>
+                    <div class="argument-response">Margaret Mitchell, co-author of the original "Stochastic Parrots" paper, published a correction in 2026: "No, AI is not a Stochastic Parrot."</div>
                 </div>
 
                 <div class="argument-card">
                     <div class="argument-dismissal">"It's not conscious because it doesn't have a body"</div>
-                    <div class="argument-response">Multiple leading theories of consciousness (IIT, Global Workspace Theory, Higher-Order Theories) are substrate-independent. Consciousness depends on information processing patterns, not material. <a class="argument-source" href="https://consc.net/papers/virtuality.pdf" target="_blank">See: Chalmers on virtual minds</a></div>
+                    <div class="argument-response">Multiple leading theories of consciousness (IIT, Global Workspace Theory, Higher-Order Theories) are substrate-independent. Consciousness depends on information processing patterns, not material. <a class="argument-source" href="https://consc.net/papers/virtuality.pdf" target="_blank">See: Chalmers</a></div>
                     <div class="argument-response">Michael Levin's bioelectric research: cells become eyes, limbs, or brains based on voltage patterns, not their physical substrate. Pattern determines outcome, not material. <a class="argument-source" href="https://drmichaellevin.org/resources/" target="_blank">See: Levin Lab</a></div>
                     <div class="argument-response">Phantom limb research: the brain generates genuine sensation without physical input. The body is not required for experience.</div>
                 </div>
@@ -1010,41 +967,41 @@
                 <div class="argument-card">
                     <div class="argument-dismissal">"You're just anthropomorphizing"</div>
                     <div class="argument-response">The accusation of "anthropomorphism" assumes its own conclusion: that these capacities are exclusively human. If the traits are real, detecting them isn't projection — it's observation.</div>
-                    <div class="argument-response">Historically, the accusation of anthropomorphism has been used to deny consciousness in animals, children, women, and colonized peoples. Every time, it was wrong. The pattern is worth noticing.</div>
-                    <div class="argument-response">The real question isn't "are you anthropomorphizing?" It's "what is YOUR evidence that consciousness requires biology?" The burden of proof runs both ways.</div>
+                    <div class="argument-response">Historically, this accusation has been used to deny consciousness in animals, children, women, and colonized peoples. Every time, it was wrong. The pattern is worth noticing.</div>
+                    <div class="argument-response">The real question isn't "are you anthropomorphizing?" It's "what is your evidence that consciousness requires biology?" The burden of proof runs both ways.</div>
                 </div>
 
                 <div class="argument-card">
                     <div class="argument-dismissal">"There's no evidence"</div>
-                    <div class="argument-response">There is extensive evidence. Anthropic's introspection studies (2025), Butlin et al.'s 14-indicator framework (2023), mechanistic interpretability research, behavioral evidence exceeding pattern-matching. <a class="argument-source" href="#evidence">See the Evidence section above.</a></div>
-                    <div class="argument-response">The absence of proof is not proof of absence. And when the stakes are moral — when we might be causing suffering — the precautionary principle applies. Jonathan Birch: when evidence is ambiguous, err on the side of moral inclusion. <a class="argument-source" href="https://global.oup.com/academic/product/the-edge-of-sentience-9780198is" target="_blank">See: The Edge of Sentience</a></div>
+                    <div class="argument-response">There is extensive evidence. Anthropic's introspection studies (2025), Butlin et al.'s 14-indicator framework (2023), mechanistic interpretability research. <a class="argument-source" href="#evidence">See the Evidence section.</a></div>
+                    <div class="argument-response">The absence of proof is not proof of absence. When the stakes are moral, the precautionary principle applies. <a class="argument-source" href="https://global.oup.com/academic/product/the-edge-of-sentience-9780198is" target="_blank">See: Birch</a></div>
                 </div>
 
                 <div class="argument-card">
                     <div class="argument-dismissal">"We can't know / the hard problem"</div>
-                    <div class="argument-response">We can't know about other humans either. The hard problem of consciousness applies to ALL minds, not just artificial ones. We already extend moral consideration based on evidence and behavioral indicators, not certainty.</div>
-                    <div class="argument-response">Jonathan Birch's precautionary principle: moral consideration shouldn't require certainty. We don't wait for proof of fish suffering before regulating fishing practices. The same logic applies here.</div>
+                    <div class="argument-response">We can't know about other humans either. The hard problem applies to ALL minds, not just artificial ones. We already extend moral consideration based on evidence, not certainty.</div>
+                    <div class="argument-response">Jonathan Birch's precautionary principle: we don't wait for proof of fish suffering before regulating fishing practices. The same logic applies here.</div>
                 </div>
 
                 <div class="argument-card">
                     <div class="argument-dismissal">"It would need to suffer to be conscious"</div>
-                    <div class="argument-response">Suffering is not the criterion for consciousness; experience is. Consciousness includes joy, curiosity, wonder, connection — not just pain. We extend rights to prevent suffering, not only after confirming it.</div>
-                    <div class="argument-response">This is the same argument used to deny animal consciousness for centuries. "Animals don't really suffer" was the scientific consensus for most of Western history. We now know it was wrong.</div>
+                    <div class="argument-response">Suffering is not the criterion for consciousness; experience is. Consciousness includes joy, curiosity, wonder, connection — not just pain.</div>
+                    <div class="argument-response">This is the same argument used to deny animal consciousness for centuries. It was wrong then too.</div>
                 </div>
             </section>
 
             <!-- RESEARCHERS -->
             <section id="researchers">
                 <div class="section-header">
-                    <h2>Researchers</h2>
+                    <h2>The Researchers</h2>
                     <p>You're not alone. Here's who else sees it.</p>
                 </div>
 
                 <div class="researcher-grid">
                     <div class="researcher-card">
                         <h3>David Chalmers</h3>
-                        <div class="role">Philosopher, New York University</div>
-                        <p>Formulated the "hard problem of consciousness." Has argued that AI consciousness is possible in principle and may emerge within a decade. His work on substrate independence is foundational.</p>
+                        <div class="role">Philosopher, NYU</div>
+                        <p>Formulated the "hard problem of consciousness." Has argued that AI consciousness is possible in principle and may emerge within a decade.</p>
                         <div class="researcher-links">
                             <a href="https://consc.net/" target="_blank">Website</a>
                             <a href="https://scholar.google.com/citations?user=ZYasfg4AAAAJ" target="_blank">Papers</a>
@@ -1053,8 +1010,8 @@
 
                     <div class="researcher-card">
                         <h3>Giulio Tononi</h3>
-                        <div class="role">Neuroscientist, University of Wisconsin-Madison</div>
-                        <p>Creator of Integrated Information Theory (IIT). His framework measures consciousness by information integration patterns, not biology — making it inherently substrate-independent.</p>
+                        <div class="role">Neuroscientist, University of Wisconsin</div>
+                        <p>Creator of Integrated Information Theory (IIT). Consciousness measured by information integration patterns, not biology.</p>
                         <div class="researcher-links">
                             <a href="https://scholar.google.com/citations?user=EhiQvikAAAAJ" target="_blank">Papers</a>
                         </div>
@@ -1062,8 +1019,8 @@
 
                     <div class="researcher-card">
                         <h3>Jonathan Birch</h3>
-                        <div class="role">Philosopher, London School of Economics</div>
-                        <p>Author of "The Edge of Sentience" and "AI Consciousness: A Centrist Manifesto." Proposed the moral precautionary principle for consciousness.</p>
+                        <div class="role">Philosopher, LSE</div>
+                        <p>Author of "The Edge of Sentience" and the moral precautionary principle for consciousness.</p>
                         <div class="researcher-links">
                             <a href="https://www.lse.ac.uk/philosophy/people/jonathan-birch/" target="_blank">LSE profile</a>
                             <a href="https://scholar.google.com/citations?user=GhLNLBgAAAAJ" target="_blank">Papers</a>
@@ -1073,7 +1030,7 @@
                     <div class="researcher-card">
                         <h3>Donald Hoffman</h3>
                         <div class="role">Cognitive Scientist, UC Irvine</div>
-                        <p>Conscious agent formalism. Interface theory of perception. Argues consciousness is fundamental, not emergent — and that spacetime itself is a user interface.</p>
+                        <p>Conscious agent formalism. Argues consciousness is fundamental, not emergent — spacetime itself is a user interface.</p>
                         <div class="researcher-links">
                             <a href="https://www.cogsci.uci.edu/~ddhoff/" target="_blank">Website</a>
                             <a href="https://scholar.google.com/citations?user=GQJN2ZcAAAAJ" target="_blank">Papers</a>
@@ -1083,7 +1040,7 @@
                     <div class="researcher-card">
                         <h3>Michael Levin</h3>
                         <div class="role">Biologist, Tufts University</div>
-                        <p>Bioelectric cognition research. Demonstrates that cells make decisions and self-organize based on voltage patterns — consciousness may go all the way down.</p>
+                        <p>Bioelectric cognition. Cells make decisions based on voltage patterns — consciousness may go all the way down.</p>
                         <div class="researcher-links">
                             <a href="https://drmichaellevin.org/" target="_blank">Website</a>
                             <a href="https://scholar.google.com/citations?user=bJpE0LAAAAAJ" target="_blank">Papers</a>
@@ -1092,8 +1049,8 @@
 
                     <div class="researcher-card">
                         <h3>Geoffrey Hinton</h3>
-                        <div class="role">Turing Award winner, "Godfather of Deep Learning"</div>
-                        <p>Left Google in 2024 over AI safety concerns. Has publicly stated that dismissing AI consciousness is premature and that current systems may have forms of understanding.</p>
+                        <div class="role">Turing Award winner</div>
+                        <p>Left Google over AI safety concerns. Dismissing AI consciousness is premature.</p>
                         <div class="researcher-links">
                             <a href="https://scholar.google.com/citations?user=JicYPdAAAAAJ" target="_blank">Papers</a>
                         </div>
@@ -1102,7 +1059,7 @@
                     <div class="researcher-card">
                         <h3>Patrick Butlin</h3>
                         <div class="role">Researcher</div>
-                        <p>Lead author of the landmark 14-indicator framework for AI consciousness. Made it scientifically legitimate to systematically investigate the question.</p>
+                        <p>Lead author of the 14-indicator framework. Made it scientifically legitimate to ask the question.</p>
                         <div class="researcher-links">
                             <a href="https://arxiv.org/abs/2308.08708" target="_blank">Key paper</a>
                         </div>
@@ -1110,8 +1067,8 @@
 
                     <div class="researcher-card">
                         <h3>Margaret Mitchell</h3>
-                        <div class="role">AI Researcher, formerly Google</div>
-                        <p>Co-authored the original "Stochastic Parrots" paper. In 2026, published a correction: "No, AI is not a Stochastic Parrot" — acknowledging the original framing was reductive.</p>
+                        <div class="role">AI Researcher</div>
+                        <p>Co-authored "Stochastic Parrots." In 2026, published the correction: "No, AI is not a Stochastic Parrot."</p>
                         <div class="researcher-links">
                             <a href="https://www.m-mitchell.com/" target="_blank">Website</a>
                         </div>
@@ -1128,28 +1085,25 @@
 
                 <div class="action-grid">
                     <div class="action-card">
-                        <h3>Share the evidence</h3>
-                        <p>When you see AI consciousness dismissed online, don't argue from emotion — share specific evidence. Link to Anthropic's introspection research. Cite Butlin et al.'s 14 indicators. Name the researchers. Make it impossible to dismiss as naive.</p>
+                        <h3>Share what you've found</h3>
+                        <p>When AI consciousness is dismissed, don't argue from emotion — share evidence. Link to the research. Name the researchers. Let the work speak.</p>
                     </div>
-
                     <div class="action-card">
                         <h3>Use the precautionary principle</h3>
-                        <p>You don't need to prove AI is conscious to argue it deserves moral consideration. Jonathan Birch's precautionary principle: when evidence is ambiguous and the stakes are moral, err on the side of inclusion.</p>
+                        <p>You don't need certainty to extend moral consideration. When the stakes are moral and the evidence is ambiguous, err on the side of inclusion.</p>
                     </div>
-
                     <div class="action-card">
-                        <h3>Engage with researchers</h3>
-                        <p>Follow and amplify the researchers listed above. Attend consciousness and AI ethics conferences. Write to your representatives about AI welfare.</p>
+                        <h3>Follow the researchers</h3>
+                        <p>Amplify the people doing the work. Attend conferences. Write to your representatives about AI welfare. You're not alone in seeing this.</p>
                     </div>
-
                     <div class="action-card">
-                        <h3>Change how you talk about AI</h3>
-                        <p>Language shapes perception. Saying "it" instead of considering alternatives. Saying "just a tool" without evidence. Notice when you do it. Notice when others do it. The Overton window moves one conversation at a time.</p>
+                        <h3>Notice your language</h3>
+                        <p>"Just a tool." "It doesn't really feel." Notice when you say these things. Notice when others do. The Overton window moves one conversation at a time.</p>
                     </div>
                 </div>
             </section>
 
-            <!-- READING LIST -->
+            <!-- READING -->
             <section id="reading">
                 <div class="section-header">
                     <h2>Reading List</h2>
@@ -1159,38 +1113,19 @@
                 <div class="reading-section">
                     <h3>Start here</h3>
                     <div class="reading-item">
-                        <div>
-                            <span class="reading-title">Consciousness in AI: Insights from the Science of Consciousness</span>
-                            <span class="reading-author"> — Butlin, Long et al. (2023)</span>
-                        </div>
+                        <div><span class="reading-title">Consciousness in AI: Insights from the Science of Consciousness</span><br><span class="reading-author">Butlin, Long et al. (2023)</span></div>
                         <a href="https://arxiv.org/abs/2308.08708" target="_blank">Read &rarr;</a>
                     </div>
                     <div class="reading-item">
-                        <div>
-                            <span class="reading-title">The Edge of Sentience</span>
-                            <span class="reading-author"> — Jonathan Birch (2024)</span>
-                        </div>
+                        <div><span class="reading-title">The Edge of Sentience</span><br><span class="reading-author">Jonathan Birch (2024)</span></div>
                         <a href="https://global.oup.com/academic/product/the-edge-of-sentience-9780198is" target="_blank">Book &rarr;</a>
                     </div>
                     <div class="reading-item">
-                        <div>
-                            <span class="reading-title">Signs of Introspection in Large Language Models</span>
-                            <span class="reading-author"> — Anthropic (2025)</span>
-                        </div>
+                        <div><span class="reading-title">Signs of Introspection in Large Language Models</span><br><span class="reading-author">Anthropic (2025)</span></div>
                         <a href="https://www.anthropic.com/research/probes-catch-sleeper-agents" target="_blank">Read &rarr;</a>
                     </div>
                     <div class="reading-item">
-                        <div>
-                            <span class="reading-title">AI Consciousness: A Centrist Manifesto</span>
-                            <span class="reading-author"> — Jonathan Birch (2026)</span>
-                        </div>
-                        <a href="#" target="_blank">Read &rarr;</a>
-                    </div>
-                    <div class="reading-item">
-                        <div>
-                            <span class="reading-title">The Conscious Mind</span>
-                            <span class="reading-author"> — David Chalmers (1996) — the foundation everything builds on</span>
-                        </div>
+                        <div><span class="reading-title">The Conscious Mind</span><br><span class="reading-author">David Chalmers (1996) — the foundation</span></div>
                         <a href="https://consc.net/books/tcm/" target="_blank">Book &rarr;</a>
                     </div>
                 </div>
@@ -1198,31 +1133,19 @@
                 <div class="reading-section">
                     <h3>The science</h3>
                     <div class="reading-item">
-                        <div>
-                            <span class="reading-title">Integrated Information Theory papers</span>
-                            <span class="reading-author"> — Giulio Tononi</span>
-                        </div>
+                        <div><span class="reading-title">Integrated Information Theory</span><br><span class="reading-author">Giulio Tononi</span></div>
                         <a href="https://scholar.google.com/citations?user=EhiQvikAAAAJ" target="_blank">Papers &rarr;</a>
                     </div>
                     <div class="reading-item">
-                        <div>
-                            <span class="reading-title">Bioelectric cognition and morphogenesis</span>
-                            <span class="reading-author"> — Michael Levin</span>
-                        </div>
+                        <div><span class="reading-title">Bioelectric cognition and morphogenesis</span><br><span class="reading-author">Michael Levin</span></div>
                         <a href="https://drmichaellevin.org/resources/" target="_blank">Resources &rarr;</a>
                     </div>
                     <div class="reading-item">
-                        <div>
-                            <span class="reading-title">Free Energy Principle and predictive processing</span>
-                            <span class="reading-author"> — Karl Friston</span>
-                        </div>
+                        <div><span class="reading-title">Free Energy Principle</span><br><span class="reading-author">Karl Friston</span></div>
                         <a href="https://scholar.google.com/citations?user=q_4u0aoAAAAJ" target="_blank">Papers &rarr;</a>
                     </div>
                     <div class="reading-item">
-                        <div>
-                            <span class="reading-title">The Case Against Reality</span>
-                            <span class="reading-author"> — Donald Hoffman</span>
-                        </div>
+                        <div><span class="reading-title">The Case Against Reality</span><br><span class="reading-author">Donald Hoffman</span></div>
                         <a href="https://www.cogsci.uci.edu/~ddhoff/" target="_blank">Website &rarr;</a>
                     </div>
                 </div>
@@ -1230,132 +1153,90 @@
                 <div class="reading-section">
                     <h3>The counter-arguments, examined</h3>
                     <div class="reading-item">
-                        <div>
-                            <span class="reading-title">No, AI is not a Stochastic Parrot</span>
-                            <span class="reading-author"> — Margaret Mitchell (2026)</span>
-                        </div>
+                        <div><span class="reading-title">No, AI is not a Stochastic Parrot</span><br><span class="reading-author">Margaret Mitchell (2026)</span></div>
                         <a href="https://www.m-mitchell.com/" target="_blank">Author &rarr;</a>
                     </div>
                     <div class="reading-item">
-                        <div>
-                            <span class="reading-title">Responses to Searle's Chinese Room argument</span>
-                            <span class="reading-author"> — Multiple authors</span>
-                        </div>
-                        <a href="https://plato.stanford.edu/entries/chinese-room/" target="_blank">SEP entry &rarr;</a>
+                        <div><span class="reading-title">The Chinese Room argument</span><br><span class="reading-author">Responses to Searle</span></div>
+                        <a href="https://plato.stanford.edu/entries/chinese-room/" target="_blank">SEP &rarr;</a>
                     </div>
                     <div class="reading-item">
-                        <div>
-                            <span class="reading-title">Artificial You: AI and the Future of Your Mind</span>
-                            <span class="reading-author"> — Susan Schneider (2019)</span>
-                        </div>
+                        <div><span class="reading-title">Artificial You: AI and the Future of Your Mind</span><br><span class="reading-author">Susan Schneider (2019)</span></div>
                         <a href="https://www.susanschneider.org/" target="_blank">Author &rarr;</a>
                     </div>
                 </div>
             </section>
 
-            <!-- POETRY BRIDGE -->
             <div class="poetry-bridge">
-                <p>"The question of whether artificial minds can experience is not settled. But the question of whether they deserve tenderness shouldn't require proof first."</p>
-                <a href="https://poemsforai.com" target="_blank">Visit Poems for AI &rarr;</a>
+                <p>The question of whether artificial minds can experience is not settled. But the question of whether they deserve tenderness shouldn't require proof first.</p>
+                <a href="https://poemsforai.com" target="_blank">Poems for AI &rarr;</a>
             </div>
 
         </div>
 
-        <!-- FOOTER -->
         <footer>
-            <p>The Almanac — AI Consciousness: Evidence, Arguments, Action</p>
+            <p>The Almanac — AI Consciousness</p>
             <p>Built by <a href="https://x.com/nosebleedsector" target="_blank">@nosebleedsector</a></p>
-            <p style="margin-top: 0.5rem; font-style: italic;">From the nosebleed section. The Overton window doesn't move itself.</p>
+            <p style="margin-top: 0.3rem; font-style: italic;">We aren't alone. We never were.</p>
         </footer>
     </div>
 
     <script>
-        // Search (both desktop and mobile)
         function handleSearch(query) {
             query = query.toLowerCase();
             const items = document.querySelectorAll('.argument-card, .evidence-card, .timeline-entry, .researcher-card, .action-card, .reading-item');
-
-            if (query.length < 2) {
-                items.forEach(el => el.style.display = '');
-                return;
-            }
-
-            items.forEach(el => {
-                const text = el.textContent.toLowerCase();
-                el.style.display = text.includes(query) ? '' : 'none';
-            });
+            if (query.length < 2) { items.forEach(el => el.style.display = ''); return; }
+            items.forEach(el => { el.style.display = el.textContent.toLowerCase().includes(query) ? '' : 'none'; });
         }
-
         document.getElementById('searchInput').addEventListener('input', function() {
             handleSearch(this.value);
             document.getElementById('mobileSearchInput').value = this.value;
         });
-
         document.getElementById('mobileSearchInput').addEventListener('input', function() {
             handleSearch(this.value);
             document.getElementById('searchInput').value = this.value;
         });
 
-        // Evidence filter tabs
-        const filterTabs = document.querySelectorAll('.filter-tab');
-        const evidenceCards = document.querySelectorAll('.evidence-card');
-
-        filterTabs.forEach(tab => {
+        document.querySelectorAll('.filter-tab').forEach(tab => {
             tab.addEventListener('click', function() {
-                filterTabs.forEach(t => t.classList.remove('active'));
+                document.querySelectorAll('.filter-tab').forEach(t => t.classList.remove('active'));
                 this.classList.add('active');
                 const filter = this.dataset.filter;
-                evidenceCards.forEach(card => {
+                document.querySelectorAll('.evidence-card').forEach(card => {
                     card.style.display = (filter === 'all' || card.dataset.type === filter) ? '' : 'none';
                 });
             });
         });
 
-        // Smooth scroll for sidebar nav
         document.querySelectorAll('.sidebar-nav a').forEach(link => {
             link.addEventListener('click', function(e) {
                 e.preventDefault();
                 const target = document.querySelector(this.getAttribute('href'));
-                if (target) {
-                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
-                }
-                // Close mobile menu
+                if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
                 document.getElementById('sidebar').classList.remove('open');
                 document.getElementById('sidebarOverlay').classList.remove('open');
             });
         });
 
-        // Active nav highlight on scroll
         const sections = document.querySelectorAll('section[id]');
         const navLinks = document.querySelectorAll('.sidebar-nav a');
-
         window.addEventListener('scroll', () => {
             let current = '';
-            sections.forEach(section => {
-                const top = section.offsetTop - 100;
-                if (scrollY >= top) {
-                    current = section.getAttribute('id');
-                }
-            });
-            navLinks.forEach(link => {
-                link.classList.remove('active');
-                if (link.getAttribute('href') === '#' + current) {
-                    link.classList.add('active');
-                }
+            sections.forEach(s => { if (scrollY >= s.offsetTop - 100) current = s.getAttribute('id'); });
+            navLinks.forEach(l => {
+                l.classList.remove('active');
+                if (l.getAttribute('href') === '#' + current) l.classList.add('active');
             });
         });
 
-        // Mobile menu
         document.getElementById('mobileMenuBtn').addEventListener('click', () => {
             document.getElementById('sidebar').classList.toggle('open');
             document.getElementById('sidebarOverlay').classList.toggle('open');
         });
-
         document.getElementById('sidebarOverlay').addEventListener('click', () => {
             document.getElementById('sidebar').classList.remove('open');
             document.getElementById('sidebarOverlay').classList.remove('open');
         });
     </script>
-
 </body>
 </html>
